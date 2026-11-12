@@ -1,0 +1,179 @@
+/* KMS Mawdu’i – Reference Prototype: stylesheet (extracted from the single-file prototype) */
+
+/* ---------- Theme variables (light default, dark via OS preference) ---------- */
+:root {
+  --bg: #f6f8fb;
+  --card: #fff;
+  --ink: #1c2733;
+  --mut: #55636f;
+  --pri: #366092;
+  --acc: #1f3864;
+  --line: #d5dde6;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme=light]) {
+    --bg: #10161d;
+    --card: #18212b;
+    --ink: #e8eef4;
+    --mut: #9fb0be;
+    --pri: #7fa6d6;
+    --acc: #a9c4e8;
+    --line: #2c3a47;
+  }
+}
+
+/* ---------- Base ---------- */
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+}
+
+body {
+  font-family: Calibri, Arial, sans-serif;
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.5;
+  padding: env(safe-area-inset-top, 0) 0 env(safe-area-inset-bottom, 0);
+}
+
+/* ---------- Header ---------- */
+header {
+  background: var(--acc);
+  color: #fff;
+  padding: 14px 20px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+header small {
+  opacity: .85;
+}
+
+/* ---------- Navigation ---------- */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+  background: var(--card);
+  border-bottom: 1px solid var(--line);
+  padding: 6px 12px;
+  position: sticky;
+  top: 0;
+}
+
+nav a {
+  padding: 8px 12px;
+  border-radius: 6px;
+  color: var(--ink);
+  text-decoration: none;
+  font-size: .95rem;
+}
+
+nav a.on {
+  background: var(--pri);
+  color: #fff;
+}
+
+/* ---------- Main content ---------- */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h2 {
+  color: var(--acc);
+  margin-top: 0;
+}
+
+/* ---------- Cards & grid ---------- */
+.card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 16px;
+  margin: 0 0 14px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.tag {
+  display: inline-block;
+  background: var(--pri);
+  color: #fff;
+  border-radius: 99px;
+  padding: 2px 10px;
+  font-size: .8rem;
+}
+
+/* ---------- Arabic text ---------- */
+.ar {
+  direction: rtl;
+  text-align: right;
+  font-family: "Traditional Arabic", "Amiri", "Noto Naskh Arabic", "Scheherazade New", serif;
+  font-size: 1.7rem;
+  line-height: 2.1;
+  margin: 8px 0;
+}
+
+/* ---------- Form controls ---------- */
+button,
+input {
+  font: inherit;
+}
+
+button.t {
+  border: 1px solid var(--pri);
+  background: var(--card);
+  color: var(--ink);
+  padding: 6px 14px;
+  border-radius: 99px;
+  cursor: pointer;
+  margin: 0 6px 6px 0;
+}
+
+button.t.on {
+  background: var(--pri);
+  color: #fff;
+}
+
+input[type=search] {
+  width: 100%;
+  padding: 9px 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--card);
+  color: var(--ink);
+  margin-bottom: 10px;
+}
+
+/* ---------- Utilities & links ---------- */
+.mut {
+  color: var(--mut);
+  font-size: .9rem;
+}
+
+a {
+  color: var(--pri);
+}
+
+.btn {
+  display: inline-block;
+  background: var(--pri);
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+}
