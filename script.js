@@ -99,7 +99,7 @@ const RES = [
     "Tafsir"
   ],
   [
-    "El-Mesawi, M. E.-T. (2005). The methodology of al-tafsir al-mawdu'i",
+    "El-Mesawi, M. E.-T. (2005). The methodology of al-tafsir al-mawdu'i: A comparative analysis",
     "Journal article on the methodology of thematic Quranic interpretation. Intellectual Discourse, 13(1), 1-30.",
     "https://journals.iium.edu.my/intdiscourse/index.php/id/article/view/118/98",
     "Academic article"
@@ -170,8 +170,8 @@ const PAGES = [
 /* Current repository filter: selected theme and keyword query */
 let state = { theme: "All", q: "" };
 
-/* Escape &, < and > so text is safe to insert as HTML */
-const esc = s => s.replace(/[&<>]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;" }[c]));
+/* Escape &, <, >, " and ' so text is safe to insert as HTML text or inside an attribute value */
+const esc = s => s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 
 /* ---------- Components ---------- */
 
