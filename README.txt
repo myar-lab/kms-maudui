@@ -1,3 +1,4 @@
+Note: In this GitHub repository the files are stored at the top level. The folder names below (tests/, evidence/, preparatory_suite_17Nov2026/, 04_HTML_Prototype/) refer to the original local project layout.
 PLAYWRIGHT TESTING - KMS Mawdu'i reference prototype
 =====================================================
 The prototype is three files in ../04_HTML_Prototype/ : index.html, style.css, script.js.
