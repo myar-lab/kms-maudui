@@ -1,0 +1,40 @@
+PLAYWRIGHT EVIDENCE - 19 NOV 2026 - TWO EXECUTIONS BY THE STUDENT
+================================================================
+Both runs: personally executed by the student in the Visual Studio Code integrated terminal, in Chromium, with the SAME test file
+(tests/kms.spec.js, tests T1-T18) and the SAME configuration (playwright.config.js). Neither run used test.js. Neither result is altered.
+
+RUN 1 - OFFICIAL INDEPENDENT RESULT
+  Command  : npx playwright test --reporter=html
+  Time     : 3:48:25 PM
+  Result   : 18 passed, 0 failed (the report also shows 0 flaky, 0 skipped)
+  Duration : 7.5 seconds
+  Evidence : Independent_Run_19Nov2026_Playwright_Report.html (the student's own report, unedited)
+
+RUN 2 - SCREEN-RECORDING RUN
+  Command  : npx playwright test --reporter=line
+  Result   : 18 passed, 0 failed
+  Duration : 11.7 seconds
+  Why      : the student ran the same tests again specifically to record the testing process for the presentation.
+  Evidence : the screen recording on Canva Slide 15 (and the screenshot of it shown earlier in Canva). The video file and the
+             screenshot are not in this ZIP. The two results (7.5 s and 11.7 s) are two executions of the same 18 tests with
+             different reporters; they are not inconsistent.
+
+WHAT THE 18 TESTS ARE (titles are in Malay; they are basic checks)
+  T1 prototype opens; T2 page has a title (any title); T3 nav or header visible; T4 body contains Home/Mawdu; T5 more than 3 links;
+  T6 RTL/Arabic check (passes whenever the page has any text); T7 body contains Sabr/Shukr/Ilm; T8 body contains tafsir;
+  T9 Sabr; T10 Shukr; T11 Ilm; T12 at least one input/button/link; T13 Resource/Library text; T14 the string "http" appears in
+  index.html + script.js (read from the working folder); T15 at least one link with an href; T16 About text; T17 at 375 px width the
+  Home Page body is not wider than 390 px; T18 no JavaScript page error.
+  They do not test the filter results, the Arabic text content, or whether the external websites are online.
+
+TO RE-RUN ELSEWHERE
+  tests/kms.spec.js is kept exactly as run, so it still contains the student's own computer path in the constant "file"
+  (file:///C:/Users/sitif/Videos/KMS_Maudui/index.html). To run it, put index.html, style.css and script.js in one folder together with
+  playwright.config.js and the tests folder, change the "file" path to that index.html, run npx playwright test from that folder, and use
+  --reporter=html or --reporter=line. The student's own package.json (script "test": "playwright test", @playwright/test ^1.65.1) is in 06_Playwright_Tests/, with its package-lock.json. After npm install and npx playwright install chromium, npm test runs the same command. The student's own package-lock.json (from the same KMS_Maudui folder, @playwright/test locked at 1.65.1) is beside it. The lock file inside preparatory_suite_17Nov2026/ belongs to the preparatory suite only.
+
+MANUAL LINK CHECK (separate)
+  The student opened all six Resource Library links by hand; all six opened. This is not part of either Playwright run.
+
+HISTORY (separate): preparatory_17Nov2026_test.js_runs/ holds the 17 Nov 2026 development runs of test.js (first run 17 passed / 1 failed,
+phone-width overflow of the Resource Library page, fixed in style.css; second run 18 passed). That is a different file and not the official result.

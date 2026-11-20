@@ -1,0 +1,12 @@
+  ✓   7 [chromium] › test.js:125:3 › Quranic verse records › T7 Tafsir and Knowledge Notes page shows six notes, each with a source and theme check (229ms)
+  ✓   8 [chromium] › test.js:136:3 › Quranic verse records › T8 "Open tafsir note" link on a record opens the notes page (228ms)
+  ✓  16 [chromium] › test.js:238:3 › About page, responsiveness and errors › T16 About page describes the four KM processes and the stated limitations (134ms)
+  ✘  17 [chromium] › test.js:246:3 › About page, responsiveness and errors › T17 narrow (phone-width) viewport has no horizontal scrolling on any page (211ms)
+  ✓  18 [chromium] › test.js:255:3 › About page, responsiveness and errors › T18 a full tour of every page and filter produces no JavaScript errors (619ms)
+  1) [chromium] › test.js:246:3 › About page, responsiveness and errors › T17 narrow (phone-width) viewport has no horizontal scrolling on any page 
+    Error: page lib
+    Expected: <= 0
+    Received:    143
+    > 251 |       expect(overflow, `page ${p.hash}`).toBeLessThanOrEqual(0);
+  1 failed
+    [chromium] › test.js:246:3 › About page, responsiveness and errors › T17 narrow (phone-width) viewport has no horizontal scrolling on any page 

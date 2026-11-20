@@ -1,0 +1,23 @@
+
+Running 18 tests using 1 worker
+
+  ✓   1 [chromium] › test.js:48:3 › Loading and the three prototype files › T1 prototype loads with the project title and six navigation links (408ms)
+  ✓   2 [chromium] › test.js:59:3 › Loading and the three prototype files › T2 index.html, style.css and script.js are all requested and loaded (301ms)
+  ✓   3 [chromium] › test.js:83:3 › Navigation › T3 each of the six pages opens from the menu and is highlighted (645ms)
+  ✓   4 [chromium] › test.js:93:3 › Navigation › T4 an unknown address falls back to the Home Page (161ms)
+  ✓   5 [chromium] › test.js:98:3 › Navigation › T5 Home Page shows the three themes with two records each (156ms)
+  ✓   6 [chromium] › test.js:110:3 › Quranic verse records › T6 six records display with reference, Arabic text (right-to-left) and translation (293ms)
+  ✓   7 [chromium] › test.js:125:3 › Quranic verse records › T7 Tafsir and Knowledge Notes page shows six notes, each with a source and theme check (224ms)
+  ✓   8 [chromium] › test.js:136:3 › Quranic verse records › T8 "Open tafsir note" link on a record opens the notes page (221ms)
+  ✓   9 [chromium] › test.js:145:3 › Theme buttons and keyword filter › T9 theme buttons filter the repository (All 6, Sabr 2, Shukr 2, Ilm 2) (335ms)
+  ✓  10 [chromium] › test.js:159:3 › Theme buttons and keyword filter › T10 "View verses" on Explore Themes opens the repository filtered to that theme (389ms)
+  ✓  11 [chromium] › test.js:170:3 › Theme buttons and keyword filter › T11 keyword filter returns matching records and a message when nothing matches (327ms)
+  ✓  12 [chromium] › test.js:188:3 › Theme buttons and keyword filter › T12 theme button and keyword filter work together; quotation marks do not break the box (245ms)
+  ✓  13 [chromium] › test.js:200:3 › Resource Library › T13 six resources are listed with the expected link addresses (207ms)
+  ✓  14 [chromium] › test.js:212:3 › Resource Library › T14 the El-Mesawi resource uses only the verified IIUM address (171ms)
+  ✓  15 [chromium] › test.js:221:3 › Resource Library › T15 each resource link opens a new tab to its own address (external sites are stubbed) (795ms)
+  ✓  16 [chromium] › test.js:238:3 › About page, responsiveness and errors › T16 About page describes the four KM processes and the stated limitations (136ms)
+  ✓  17 [chromium] › test.js:246:3 › About page, responsiveness and errors › T17 narrow (phone-width) viewport has no horizontal scrolling on any page (236ms)
+  ✓  18 [chromium] › test.js:255:3 › About page, responsiveness and errors › T18 a full tour of every page and filter produces no JavaScript errors (493ms)
+
+  18 passed (7.4s)

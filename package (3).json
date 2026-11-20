@@ -1,0 +1,16 @@
+{
+  "name": "kms-mawdui-prototype-tests",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Playwright tests for the KMS Mawdu’i reference prototype (index.html, style.css, script.js) - SKJ4283 A261",
+  "scripts": {
+    "install:browser": "playwright install chromium",
+    "serve": "node serve.js",
+    "test": "playwright test",
+    "test:headed": "playwright test --headed",
+    "report": "playwright show-report playwright-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
